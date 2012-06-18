@@ -84,3 +84,5 @@ service "rabbitmq-server" do
   supports :status => true, :restart => true
   action [ :enable, :start ]
 end
+
+include_recipe "rabbitmq::monitoring"
